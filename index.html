@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pruebas Bootstrap</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-responsive.css">
+	<style type="text/css">   
+	
+		/*Pc de escritorio*/
+		@media(min-width: 1200px){	
+			body{color:black;}
+		}
+   		
+   		/*Escritorio pequeño o una tablet*/				
+		@media(min-width: 768px) and (max-width: 979px){	
+			body{color: red}
+		}
+		
+		/*Tablet o Smarthphone*/
+		@media(max-width: 767px){
+			body{color: yellow}
+		}
+
+		/*Smarthphone*/
+		@media(max-width: 480px){	
+			body{color: green}
+		}
+	</style>
+	<script type="text/javascript" src="static/js/jquery-1.12.0.min.js"></script>
+    <script type="text/javascript" src="static/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="static/js/bootstrap-rating.min.js"></script>
+    <script type="text/javascript" src="static/js/jquery.bsAlerts.min.js"></script>
+    <script type="text/javascript" src="static/js/ping.js" charset="utf-8"></script>
+    <script type="text/javascript" src="static/js/buscar_articulos.js"></script>
+</head>
+<body>
+<div class="container">
+
+	<div class="row-fluid">
+		<div class="span6">
+			<div class="page-header">
+				<h1>Buscador de Art&iacute;culos</h1>
+			</div>	
+		</div>
+	</div>
+	<!--<div class="span6">-->
+		<div class="form-group">
+			<!--<legend for="InputUrl">Ingrese su url</legend>-->
+			<h2>Ingrese su url</h2>
+			<div class="input-append">
+				<input type="text" class="input-xxlarge" id="url" placeholder="Ingrese aqu&iacute; su url...">
+		    	<!--<small id="urhelp" class="form-text text-muted">Por favor, ingrese su url.</small>-->
+	       		<button class="btn btn-success" id="enviar" type="button">Enviar!</button>
+	    	</div>
+	    </div>
+		<br>
+
+		<div class="form-group">
+			<h2>Resultado</h2>
+			<textarea rows="3" cols="100"></textarea>
+	    </div>
+
+	<!--</div>-->
+</div>
+
+</body>
+</html>
+
